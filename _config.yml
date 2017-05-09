@@ -21,12 +21,12 @@ compress_html:
 
 
 # Site meta
-title:                Summer
-tagline:              'Form follows function'
-description:          'A simple Jekyll theme with a photo sidebar.'
+title:                Cashews and Screws
+tagline:              'A personal blog'
+description:          'A personal blog'
 keywords:             'connor, bär, designer, traveller, code, jekyll, developer, theme'
-url:                  https://madebyconnor.github.io
-baseurl:              /summer
+url:                  https://cashewsandscrews.github.io
+baseurl:              
 assets:               /assets
 images:               /images/
 image:                index-large.jpg
