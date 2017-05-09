@@ -1,34 +1,89 @@
-# Permalinks
-permalink:           pretty
+# Dependencies
+markdown:             kramdown
+highlighter:          rouge
 
-# Setup
-title:               Progress
-tagline:             A responsive blog theme that illustrates reading progress. Suited for continous reading.
-url:                 http://cashewsandscrews.github.io
-analytics_id:
-
-# Owner/author information
-owner:
-  name:           Alex and Ashley
-  avatar:         avatar.png
-  bio:            "Designer."
-  email:          alex@collectivelymade.com
-  twitter:        alexanderussell
-  github:         alexanderussell
-  instagram:      alexanderussell
-  dribbble:       alexanderussell
-  location:       "Lincoln, NE"
-
-
-# Custom vars
-version:             2.0.0
-github:
-  repo:              
-
-# Pagination
-paginate: 5
-paginate_path: "blog/page:num"
 
 # Gems
 gems:
-  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+
+
+# Settings
+color:                '#fd7e14'
+exclude:              [CNAME, README.md, NOTES.md, LICENSE.md, .gitignore, package.json, bower.json, _js, _scss, _images, gulpfile.js, gulpconfig.js, node_modules, bower_components, gemfile, Gemfile.lock]
+permalink:            /:title/
+compress_html:
+  clippings: all
+  comments: all
+
+
+# Site meta
+title:                Summer
+tagline:              'Form follows function'
+description:          'A simple Jekyll theme with a photo sidebar.'
+keywords:             'connor, bär, designer, traveller, code, jekyll, developer, theme'
+url:                  https://madebyconnor.github.io
+baseurl:              /summer
+assets:               /assets
+images:               /images/
+image:                index-large.jpg
+logo:                 /assets/icons/apple-icon-144x144.png
+
+author:
+  name:               Connor Bär
+  bio:                Hi, I'm Connor, the author of this blog. Nice to meet you!
+  image:              author
+  url:                https://connorbaer.co
+  email:              hello@connorbaer.co
+  twitter:            connor_baer
+
+social:
+  twitter:            https://twitter.com/connor_baer
+  instagram:          https://instagram.com/connor_baer
+  github:             https://github.com/madebyconnor/summer
+
+version:              2.0.0
+
+github:
+  repo:               https://github.com/madebyconnor/summer
+
+
+# Integrations
+# typekit:              fcv7rfe
+
+google_fonts:
+  Overpass:           400, 600, 800
+
+# google_analytics_key: UA-37412525-4
+# google_site_verification: Z-pc_HPc4XNBz8xg1fgtxO2MSIYLirZc2jWTNq0bJyM
+
+
+# Content
+excerpt_separator: <!-- Read more -->
+
+navigation:
+  GitHub: https://github.com/madebyconnor/summer
+  Download: https://github.com/madebyconnor/summer/archive/gh-pages.zip
+
+collections:
+  recipes:
+    output: true
+
+defaults:
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+      lang: en
+      permalink: /news/:title/
+  - scope:
+      path: ''
+      type: recipes
+    values:
+      layout: recipe
+      lang: en
+      permalink: /:title/
